@@ -8,7 +8,7 @@ Tài liệu này hướng dẫn người khác clone repo sạch và chạy lạ
 
 ```bash
 git clone <repo-url>
-cd lab-5-PNS1441
+cd lab-5-PhamThiYenAnh
 ```
 
 ---
