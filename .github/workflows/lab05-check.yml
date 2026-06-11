@@ -51,14 +51,9 @@ jobs:
           docker compose logs api
           exit 1
 
-      - name: Test AI service /health (port 9000)
+      - name: Test AI service /health (port 9000) (Not applicable for team-gate)
         run: |
-          for i in 1 2 3 4 5; do
-            curl -fsS http://localhost:9000/health && exit 0
-            echo "Retry $i..."; sleep 5
-          done
-          docker compose logs ai-service
-          exit 1
+          echo "AI service not applicable for team-gate. Skipping health check."
 
       - name: Test DB readiness (pg_isready)
         run: |
